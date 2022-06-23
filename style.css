@@ -9,19 +9,24 @@
 }
 
 body{
+    display:flex;
     width: 100%;
     min-height: 100vh;
     background-color: #1e1335;
     margin:0;
     padding:0;
-    display:flex;
     justify-content: center;
 }
-
-.wrapper{
+/* .titulo{
     display: flex;
+    width: 60%;
+    justify-content: center;
+
+} */
+.wrapper{
+    display:flex;
     align-items: center;
-    justify-content:start ;
+    justify-content:space-around ;
     width: 60%;
     height: 100vh;
 }
@@ -30,12 +35,62 @@ body{
     display: flex;
     align-items: center;
     justify-items: center;
-    width: 50%;        
+    width: 50%;      
+    border: 1px solid lightgray;  
 
 }
 
 .seurole-phone img{
-    height: 50rem;     
+    height: 60rem;     
 
 }
 
+.seurole-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+    border: 1px solid lightgray;
+    
+}
+
+.group:nth-child(1){
+    min-height: 40rem;
+}
+
+.group:nth-child(2){
+    height: 3rem;
+}
+
+.logo-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 20rem;
+    max-height: 20rem;
+}
+.logo-photo img{
+    
+    width: 20rem;
+    height: 20rem;
+}
+.logo-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:40%;
+    
+}
